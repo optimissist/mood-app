@@ -4,4 +4,4 @@ function App() {
   return <MoodApp />
 }
 
-export default App;
+export default App
