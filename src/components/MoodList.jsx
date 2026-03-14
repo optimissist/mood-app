@@ -6,9 +6,9 @@ function MoodList({entries, onDelete}) {
     return acc;
 }, {});
 
-const mostCommon = Object.keys(moodCounts).reduce((a, b) => 
+const mostCommon = entries.length > 0 ? Object.keys(moodCounts).reduce((a, b) => 
     moodCounts[a] > moodCounts[b] ? a : b
-);
+) : null;
 
     return (
     <div>
